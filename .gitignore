@@ -6,6 +6,11 @@ data/audio/*.wav
 data/image/*
 data/token/*
 data/video/*
+!data/audio/tmp/hoge
+!data/audio/audio.wav
+!data/image/2023年11月27日.png
+!data/video/*
+!data/token/hoge
 client_secrets.json
 .DS_Store
 */__pycache__
