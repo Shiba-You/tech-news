@@ -10,8 +10,6 @@ from utils import token_generator
 from utils import get_datetime
 importlib.reload(token_generator)
 
-systemCommand = "あなたはライターです。今から与える文章を中学生でもわかるように以下の制約条件に従って要約してください。# 制約条件：・500文字以内で出力してください。・敬語で出力してください。"
-
 def main(contents):
   print("Start Convert")
   audio_input = '../data/audio/audio.wav'
