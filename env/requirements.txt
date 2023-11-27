@@ -1,0 +1,9 @@
+beautifulsoup4
+requests
+python-dotenv
+ffmpeg-python
+google-api-python-client
+openai
+google_auth_oauthlib
+pydub
+google

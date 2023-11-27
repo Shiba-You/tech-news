@@ -1,0 +1,9 @@
+.venv_tech-news/
+.env
+data/audio/tmp/*
+data/audio/*.mp3
+data/audio/*.wav
+data/image/*
+data/token/*
+data/video/*
+client_secrets.json
