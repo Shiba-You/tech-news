@@ -1,4 +1,3 @@
-#%%
 import importlib
 
 import scraping
@@ -18,5 +17,3 @@ def main():
   upload.main(links, summaries)
 
 main()
-
-# %%

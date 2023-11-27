@@ -75,7 +75,7 @@ def upload(youtube, links, summaries):
         "embeddable": "true", # 動画の埋め込みを許可する
       },
     },
-    media_body=MediaFileUpload("../data/video/video.mp4") # 修正(動画ファイルのパスを記載
+    media_body=MediaFileUpload("../data/video/video.mp4")
   )
   response = request.execute()
 
