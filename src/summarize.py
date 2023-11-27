@@ -47,9 +47,7 @@ def summarize(content):
         "content": content
       }
     ]}
-  res = requests.post(url, headers=header, json=payload)
-  print(res.json())
-  
+  res = requests.post(url, headers=header, json=payload)  
   return res.json()["choices"][0]["message"]["content"]
 
 def get_thumbnail(summary):

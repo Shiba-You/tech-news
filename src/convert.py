@@ -51,7 +51,6 @@ def text_to_speech(content, idx):
     }
   }
   res = requests.post(url, headers=header, json=payload)
-  print(f"res.json:\n {res.json()}")
   with open(f'../data/audio/tmp/audio_{idx}.wav', "w+b") as f:
     encode_string = res.json()["audioContent"]
     decode_string = base64.b64decode(encode_string)
