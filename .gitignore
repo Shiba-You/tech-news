@@ -7,3 +7,5 @@ data/image/*
 data/token/*
 data/video/*
 client_secrets.json
+.DS_Store
+*/__pycache__
