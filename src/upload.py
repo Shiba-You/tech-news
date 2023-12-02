@@ -17,6 +17,13 @@ scopes = ["https://www.googleapis.com/auth/drive"]
 
 def main(links, summaries):
   print("Start Upload")
+  print("=======================================")
+  print("summaries: ")
+  print(summaries)
+  print("links: ")
+  print(links)
+  print("=======================================")
+  
   os.environ["OAUTHLIB_INSECURE_TRANSPORT"] = "1"
   drive = get_auth()
   upload(drive)
