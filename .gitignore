@@ -14,3 +14,4 @@ data/video/*
 client_secrets.json
 .DS_Store
 */__pycache__
+src/upload_*.py

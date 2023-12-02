@@ -9,6 +9,7 @@ import os
 from utils import token_generator
 from utils import get_datetime
 importlib.reload(token_generator)
+importlib.reload(get_datetime)
 
 def main(contents):
   print("Start Convert")
@@ -23,8 +24,7 @@ def main(contents):
   return 
 
 def text_to_speech(content, idx):
-  target = "textToSpeech"
-  generator = token_generator.TokenGenerator(target)
+  generator = token_generator.TokenGenerator("textToSpeech", "TEXT_TO_SPEECH_CLIENT_ID", "TEXT_TO_SPEECH_CLIENT_SECRET")
   access_key = generator.get_access_token()
   url = "https://us-central1-texttospeech.googleapis.com/v1beta1/text:synthesize"
   header = {
